@@ -40,8 +40,8 @@ public class RestfulApiTest extends Simulation {
                                {"name": "#{name}",
                                "data": {"year": "#{data.year}",
                                "price": "#{data.price}",
-                               "CPU model": "#{data.model}",
-                               "Hard disk size": "#{data.size}"}}
+                               "CPUmodel": "#{data.model}",
+                               "HardDiskSize": "#{data.size}"}}
                               """
                     )).asJson()
                     .check(jmesPath("id").find().saveAs("id"))
@@ -65,8 +65,8 @@ public class RestfulApiTest extends Simulation {
                                {"name": "#{name}",
                                "data": {"year": "#{data.year}",
                                "price": "#{data.price}",
-                               "CPU model": "#{data.model}",
-                               "Hard disk size": "#{data.size}",
+                               "CPUmodel": "#{data.model}",
+                               "HardDiskSize": "#{data.size}",
                                "color": "#{data.color}"}}
                               """
                     )).asJson()
@@ -89,11 +89,11 @@ public class RestfulApiTest extends Simulation {
                     .check(status().is(200))
                     .check(jmesPath("id").isEL("#{id}"))
                     .check(jmesPath("name").isEL("#{name}"))
-                    .check(jmesPath("year").isEL("#{data.year}"))
-                    .check(jmesPath("price").isEL("#{data.price}"))
-                    .check(jmesPath("CPU model").isEL("#{data.model}"))
-                    .check(jmesPath("Hard disk size").isEL("#{data.size}"))
-                    .check(jmesPath("color").isEL("#{data.color}"))
+                    .check(jmesPath("data.year").isEL("#{data.year}"))
+                    .check(jmesPath("data.price").isEL("#{data.price}"))
+                    .check(jmesPath("data.CPUmodel").isEL("#{data.model}"))
+                    .check(jmesPath("data.HardDiskSize").isEL("#{data.size}"))
+                    .check(jmesPath("data.color").isEL("#{data.color}"))
             )
 
             .exec(
