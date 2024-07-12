@@ -1,0 +1,12 @@
+[
+  {"name": "apple","data": {"year":"2019", "price":"1849.99", "model":"Intel Core i9", "size":"1 TB", "color":"gris"}},
+  {"name": "mac","data": {"year":"2022", "price":"2001.00", "model":"Intel Core i7", "size":"1 TB", "color":"white"}},
+  {"name": "lenovo","data": {"year":"2023", "price":"3001.02", "model":"lenovo Core i10", "size":"4 TB", "color":"black"}},
+  {"name": "dell","data": {"year":"2020", "price":"1501.80", "model":"dell Core i5", "size":"1.5 TB", "color":"purple"}},
+  {"name": "asus","data": {"year":"2021", "price":"5001.45", "model":"asus i18", "size":"2.4 TB", "color":"brown"}},
+  {"name": "acer","data": {"year":"2024", "price":"2001.00", "model":"acer Core i7", "size":"1.4 TB", "color":"sky blue"}},
+  {"name": "msi","data": {"year":"2018", "price":"4101.50", "model":"msi Core i10", "size":"4.3 TB", "color":"hazel"}},
+  {"name": "huawei","data": {"year":"2024", "price":"1501.80", "model":"huawei Core i9", "size":"2.5 TB", "color":"amber"}},
+  {"name": "hp","data": {"year":"2021", "price":"4200.45", "model":"asus i10", "size":"5.4 TB", "color":"burundy"}},
+  {"name": "akita","data": {"year":"2021", "price":"1000.80", "model":"akita Core i5", "size":"1.2 TB", "color":"white 2"}}
+]
