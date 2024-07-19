@@ -21,13 +21,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
+      - name: Checkout code
+        uses: actions/setup-java@v4
+        with:
+              distribution: 'zulu' # See 'Supported distributions' for available options
+              java-version: '21'
       - name: Setup Gradle
-        uses: gradle/gradle-build-action@v3
-
+        uses: gradle/gradle-build-action@v2
       - name: Execute test
         run: gradle gatlingRun --simulation=${{ inputs.testSuite }} -DconcurrentUsers=${{ inputs.concurrent }}
-
       - name: Save report
         if: ${{always()}}
         uses: actions/upload-artifact@v3.1.2
